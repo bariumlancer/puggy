@@ -1,0 +1,28 @@
+block vars
+
+doctype html
+html(lang = "ru")
+  head
+    block meta
+      meta(charset = "utf-8")
+      meta(name = "viewport", content = "width=device-width, initial-scale=1, shrink-to-fit=no")
+    
+    block headInclusions
+      // CSS
+      link(rel = "stylesheet", href = "css/bootstrap-4.0.0.css")
+      link(rel = "stylesheet", href = "css/styles.css")
+      
+      // Google Fonts
+      link(rel = "stylesheet", href = _font)
+
+    title #{_title}
+  body
+    include ../includes/header.pug
+
+    block content
+
+    include ../includes/footer.pug
+    block footerInclusions
+      script(src = "js/jquery-3.4.1.slim.min.js")
+      script(src = "js/popper.min.js")
+      script(src = "js/bootstrap.min.js")

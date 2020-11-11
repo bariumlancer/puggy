@@ -1,0 +1,18 @@
+//- Подключение шаблона
+extends layout/layout.pug
+
+//- Тайтл и шрифты
+block vars
+  - var _title = "title"
+  - var _font = "link"
+
+//- Дополнение мета-тегов
+append meta
+
+//- Подключение дополнительных библиотек
+append headInclusions
+append footerInclusions
+
+//- Контент
+block content
+  h1 Hello, Pug!
