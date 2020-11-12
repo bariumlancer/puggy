@@ -1,0 +1,44 @@
+{
+    
+    "workbench.iconTheme": "file-icons",
+    "workbench.colorTheme": "Solarized Light",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "emeraldwalk.runonsave": {
+
+
+        "commands": [
+            {
+                "match": "\\.haml$",
+                "isAsync": true,
+                "cmd": "haml ${file} ${workspaceFolder}\\${fileBasenameNoExt}.html"
+            },
+            {
+                "match": "\\.txt$",
+                "cmd": "echo 'I am a .txt file ${file}.'"
+            },
+            {
+                "match": "index.pug$",
+                "cmd": "pug ${file} --pretty --out build"
+            },
+            {
+                "match": "\\.less$",
+                "cmd": "lessc ${fileBasename} build//css/${fileBasenameNoExt}.css"
+            },
+            {
+                "match": "\\.scss$",
+                "cmd": "sass ${fileBasename} build//css/${fileBasenameNoExt}.css --no-source-map"
+            },
+            {
+                "match": "\\.js$",
+                "cmd": "echo 'I am a .js file ${file}.'"
+            },
+        ]
+    },
+    "git.ignoreWindowsGit27Warning": true,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.shellArgs.windows": []
+}

@@ -9,7 +9,8 @@ html(lang = "ru")
     
     block headInclusions
       // CSS
-      link(rel = "stylesheet", href = "css/bootstrap-4.0.0.css")
+      //- Boostsrap Version - 5.0.0 alpha3
+      link(rel = "stylesheet", href = "css/bootstrap.css")
       link(rel = "stylesheet", href = "css/styles.css")
       
       // Google Fonts
@@ -23,6 +24,4 @@ html(lang = "ru")
 
     include ../includes/footer.pug
     block footerInclusions
-      script(src = "js/jquery-3.4.1.slim.min.js")
-      script(src = "js/popper.min.js")
-      script(src = "js/bootstrap.min.js")
+      script(src = "js/bootstrap.bundle.min.js")
